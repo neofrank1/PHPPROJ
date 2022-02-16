@@ -1,0 +1,52 @@
+body {
+font-family: "Open Sans", sans-serif;
+}
+
+.navigation {
+ font-size: 15px;
+}
+.navigation .nav-item .nav-link:hover {
+background-color: gray;
+border-radius: 5px;
+}
+
+:root{
+    --primary: #0d6efd;
+    --dark: #21252f;
+    --body: #888;
+    --box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+}  
+
+body
+{
+    line-height: 1.7;
+    color: var(--body);
+}
+
+.display4
+{
+    color: var(--dark);
+    font-weight: 700;
+}
+
+.hero{
+    background-image: url(../img/dog1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+
+.hero::after
+{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(21, 20, 51, 0.486);
+    z-index: -1;
+}
+
